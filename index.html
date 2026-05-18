@@ -255,26 +255,44 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
-      .top-bar { padding: 18px 32px; }
-      .hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-r { height: 65vw; order: -1; }
+      .top-bar { padding: 16px 24px; }
+      .tb-name { font-size: 15px; }
+
+      /* Hero */
+      .hero { grid-template-columns: 1fr; min-height: auto; width: 100%; }
+      .hero-r { height: 72vw; order: -1; width: 100%; }
       .hero-r::before { background: linear-gradient(to bottom, transparent 40%, var(--sand) 100%); }
-      .hero-l { padding: 60px 32px 72px; order: 1; }
-      .hero-name { margin-bottom: 28px; }
+      .hero-l { padding: 48px 28px 64px; order: 1; }
+
+      /* About */
       .s-about { grid-template-columns: 1fr; min-height: auto; }
       .s-about-photo { height: 70vw; order: -1; }
-      .s-about-text { padding: 72px 32px; }
-      .s-investment-inner { grid-template-columns: 1fr; gap: 64px; }
-      .invest-r { border-left: none; padding-left: 0; border-top: 1px solid rgba(196,169,138,.2); padding-top: 52px; }
+      .s-about-text { padding: 60px 28px; }
+
+      /* Investment meta row: 2 cols instead of 4 */
+      .meta-row { grid-template-columns: repeat(2,1fr); }
+
+      /* Investment */
+      .s-investment-inner { grid-template-columns: 1fr; gap: 52px; }
+      .invest-r { border-left: none; padding-left: 0; border-top: 1px solid rgba(196,169,138,.2); padding-top: 44px; }
+
+      /* Grids */
       .possible-grid { grid-template-columns: 1fr; }
       .possible-grid li:nth-last-child(-n+2) { border-bottom: 1px solid rgba(140,104,72,.15); }
       .possible-grid li:last-child { border-bottom: none; }
       .possible-grid li.closing-item { grid-column: 1; }
       .fit-grid { grid-template-columns: 1fr; }
-      .t-grid { grid-template-columns: 1fr; gap: 44px; }
-      .s-opening, .s-available, .s-underneath, .s-possible, .s-selfish,
-      .s-container, .s-fit, .s-investment, .s-yes, .s-testimonials { padding: 80px 32px; }
-      .s-closing { padding: 100px 32px 80px; }
+      .t-grid { grid-template-columns: 1fr; gap: 36px; }
+
+      /* Section padding */
+      .s-opening { padding: 72px 28px 80px; }
+      .s-available, .s-underneath, .s-possible, .s-selfish,
+      .s-container, .s-fit, .s-investment, .s-yes, .s-testimonials { padding: 72px 28px; }
+      .s-quote-strip { padding: 64px 28px !important; }
+      .s-closing { padding: 88px 28px 72px; }
+
+      /* Footer */
+      footer { padding: 24px 20px; }
     }
   </style>
 </head>
