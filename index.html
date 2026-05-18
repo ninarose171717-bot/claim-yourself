@@ -205,6 +205,16 @@
     .t-item p { font-family: var(--b); font-size: 17px; font-style: italic; color: var(--mid); line-height: 1.85; }
     .t-cta { margin-top: 72px; text-align: center; }
 
+    /* ── FAQ — cream ── */
+    .s-faq { background: var(--cream); padding: 120px 100px; }
+    .s-faq-inner { max-width: 720px; margin: 0 auto; }
+    .faq-headline { font-family: var(--f); font-weight: 300; font-size: clamp(26px,3vw,40px); color: var(--text); letter-spacing: -.02em; margin-bottom: 64px; line-height: 1.15; }
+    .faq-headline em { font-style: italic; color: var(--brown); }
+    .faq-item { border-top: 1px solid rgba(140,104,72,.22); padding: 40px 0; }
+    .faq-item:last-child { border-bottom: 1px solid rgba(140,104,72,.22); }
+    .faq-q { font-family: var(--f); font-size: clamp(17px,1.8vw,21px); font-weight: 300; font-style: italic; color: var(--text); margin-bottom: 14px; line-height: 1.35; }
+    .faq-a { font-family: var(--b); font-size: 16px; color: var(--mid); line-height: 1.9; }
+
     /* ── CLOSING — cream ── */
     .s-closing { position: relative; background: url('photos/for the last photo/PHOTO-2026-05-17-14-05-25.jpg') center 35% / cover no-repeat; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 160px 80px 140px; }
     .s-closing::before { content: ''; position: absolute; inset: 0; background: rgba(250,247,242,0.52); pointer-events: none; }
@@ -287,7 +297,7 @@
       /* Section padding */
       .s-opening { padding: 72px 28px 80px; }
       .s-available, .s-underneath, .s-possible, .s-selfish,
-      .s-container, .s-fit, .s-investment, .s-yes, .s-testimonials { padding: 72px 28px; }
+      .s-container, .s-fit, .s-investment, .s-yes, .s-testimonials, .s-faq { padding: 72px 28px; }
       .s-quote-strip { padding: 64px 28px !important; }
       .s-closing { padding: 88px 28px 72px; }
 
@@ -516,7 +526,44 @@
   </div>
 </section>
 
-<!-- DEEP — single testimonial before closing -->
+<!-- CREAM — FAQ -->
+<section class="s-faq">
+  <div class="s-faq-inner">
+    <h2 class="faq-headline reveal">Questions you might<br><em>be asking</em></h2>
+
+    <div class="faq-item reveal">
+      <p class="faq-q">How is this different from everything else I've done?</p>
+      <p class="faq-a">Most of what you've done has worked on one layer at a time. The insight, or the practice, or the identity work. What we're doing here runs all of it together. The somatic work, the parts work, the identity work. At the same time, inside the same container. That's why things that were understood before finally get to land.</p>
+    </div>
+
+    <div class="faq-item reveal">
+      <p class="faq-q">I'm already in therapy. Can I do both?</p>
+      <p class="faq-a">Yes, and I'd encourage it. This work isn't therapy and it doesn't replace it. It runs alongside good therapeutic support because we're working at a different layer: the body, the breath, the parts of you that talk therapy doesn't always reach. Women often find this work helps the therapy go deeper.</p>
+    </div>
+
+    <div class="faq-item reveal">
+      <p class="faq-q">How much time do I need each week?</p>
+      <p class="faq-a">One 75-minute session per week, plus a daily 10-minute practice I record specifically for you. That practice isn't optional. It's the thread that carries the work between our sessions. Outside of that, this isn't homework-heavy. It's presence-heavy. You bring yourself. I'll take care of the rest.</p>
+    </div>
+
+    <div class="faq-item reveal">
+      <p class="faq-q">What if I fall behind or miss a session?</p>
+      <p class="faq-a">Life happens. We'll handle it. Sessions are 1:1, so if something comes up we'll find another time. What I'll ask of you is honesty, with me and with yourself, about what's actually getting in the way. Sometimes what looks like a schedule conflict is the first thing we work on together.</p>
+    </div>
+
+    <div class="faq-item reveal">
+      <p class="faq-q">What's the investment?</p>
+      <p class="faq-a">$717 for this round, including payment plans. This price is available once, for the women who help shape how this work lives in the world going forward. Full price after this cohort is $1,500.</p>
+    </div>
+
+    <div class="faq-item reveal">
+      <p class="faq-q">What if it doesn't feel like the right fit?</p>
+      <p class="faq-a">You'll know within the first week. If after our first session you feel in your body that this isn't the right container for you right now, I'll refund you in full. No awkwardness, no convincing. I only want you here if you're genuinely in. After that first week, you're committed. And so am I, completely.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHITE — single testimonial before closing -->
 <div class="s-quote-strip" style="background:#FFFFFF; padding:100px;">
   <div class="quote-strip-inner reveal">
     <span class="qs-mark">"</span>
